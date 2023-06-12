@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://kit.fontawesome.com/81634d0f93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="https://dumbways.id/"><img src="icon/logo.png" alt="dumbways_logo" /></a>
+                </li>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="active" href="project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+              <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div class="input-project">
+                        <label for="input-project-title">Project Name</label>
+                        <input type="text" id="input-project-title">
+                    </div>
+                    <div class="label-date">
+                        <div>
+                            <label for="input-start-date">Start Date</label>
+                            <input type="date" id="input-start-date">
+                        </div>
+                        <div>
+                            <label for="input-end-date">End Date</label>
+                            <input type="date" id="input-end-date">
+                        </div>
+                    </div>
+                    <div class="label-description">
+                        <label for="input-description">Description</label>
+                        <textarea type="text" id="input-description"></textarea>
+                    </div>
+                    <div class="huruf-techno">
+                        <p>Technologies</p>
+                        <div class="checkbox-group">
+                            <div>
+                                <input class="inputCheckbox" type="checkbox" id="input-nodejs">
+                                <label for="input-nodejs">html</HTml></label>
+                            </div>
+                            <div>
+                                <input class="inputCheckbox" type="checkbox" id="input-reactjs">
+                                <label for="input-reactjs">css</label>
+                            </div>
+                            <div>    
+                            <input class="inputCheckbox" type="checkbox" id="input-golang">
+                            <label for="input-golang">c</label>
+                            </div>
+                            <div>
+                                <input class="inputCheckbox" type="checkbox" id="input-laravel">
+                                <label for="input-laravel">c++</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="upload-img">
+                            <label for="input-image">
+                                <p>Choose</p>
+                                <i class="fa-solid fa-paperclip fa-fw"></i>
+                            </label>
+                            <input type="file" id="input-image" required hidden/>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" onclick="submitData()">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="h1myproject">
+            <h1>MY PROJECT</h1>
+        </div>
+        <div id="contents" class="container-blog-detail">
+                <div class="blog-detail">
+                    <img src="icon/IMG-20220619-WA0006.jpg" alt="">
+                    <div class="p-judul-image">
+                        <h4>
+                            <a href="blog.html" target="_blank">Dumbways Fullstack WebDev </a>
+                        </h4>
+                        <p>durasi 2 bulan</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam alias cum cupiditate similique tempore dignissimos sunt voluptate.</p>
+                    </div>
+                    <div class="brands">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="edit-delete">
+                        <button class="edit" type="button">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>
+
+            
+                <div class="blog-detail">
+                    <img src="icon/IMG-20220619-WA0006.jpg" alt="">
+                    <div class="p-judul-image">
+                        <h4>
+                            <a href="blog.html" target="_blank">Pelatihan BLK Karawang </a>
+                        </h4>
+                        <p>durasi 1 bulan</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam alias cum cupiditate similique tempore dignissimos sunt voluptate.</p>
+                    </div>
+                    <div class="brands">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-laravel"></i>
+                    </div>
+                    <div class="edit-delete">
+                        <button class="edit" type="button">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>
+
+            
+                <div class="blog-detail">
+                    <img src="icon/IMG-20220619-WA0006.jpg" alt="">
+                    <div class="p-judul-image">
+                        <h4>
+                            <a href="blog.html" target="_blank">Himtel </a>
+                        </h4>
+                        <p class="durasi">durasi 5 bulan</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam alias cum cupiditate similique tempore dignissimos sunt voluptate.</p>
+                    </div>
+                    <div class="brands">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-laravel"></i>
+                    </div>
+                    <div class="edit-delete">
+                        <button class="edit" type="button">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>
+                </div>
+                    <div class="edit-delete">
+                        <button class="edit" type="button">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>
+        </div>
+    
+        <script src="project.js"></script>
+</body>
+</html>
