@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="testi.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="https://dumbways.id/"><img src="icon/logo.png" alt="dumbways_logo" /></a>
+                </li>
+                <li class="item-collapse">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                  <a href="project.html">My Project</a>
+                </li>
+                <li class="item-collapse">
+                  <a class="active" href="testi.html">Testimonials</a>
+                </li>
+                <li class="item-collapse">
+                  <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right item-collapse">
+              <a href="contact.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button
+              style="background-color:transparent; 
+                     border: none; 
+                     cursor: pointer"
+                     onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="project.html">My Project</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="testi.html">Testimonial</a>
+    </div>
+
+    <div class="container-testimonial">
+      <h1>My Testimonials</h1>
+      <section class="testimonials" id="testimonials">
+         <div class="testimonial">
+          <img
+            src="icon/IMG-20220619-WA0006.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Cobain ikut gabung!
+          </p>
+          <p class="author">- Surya</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="icon/IMG-20220619-WA0006.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            ayo gabung
+          </p>
+          <p class="author">- Amel</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="icon/IMG-20220619-WA0006.jpg"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Kamu harus coba gabung.
+          </p>
+          <p class="author">- Dian</p>
+        </div> 
+      </section>
+    </div> 
+
+    <script src="index.js"></script>
+    <script src="testi.js"></script>
+  </body>
+</html>
